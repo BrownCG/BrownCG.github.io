@@ -1,1 +1,29 @@
-Welcome to piProjects
+<html>
+    <head>
+        <title>Pi Projects</title>
+    </head>
+    <body>
+        <h1>Raspberry Pi Projects</h1>
+        <table width="800" border="1" class="table">
+    	<tr>
+        	<td><a href='/cannonCup'>Cannon Cup</a></td>
+        	<td><a href='/miniBookie'>Mini-Bookie</a></td>
+        	<td><a href='/oregoneAirways'>Oregone Airways</a></td>
+		<td><a href='/piProjects'>Raspberry Pi Work</a></td>
+    	</tr>
+	</table>
+	<div>
+		The Raspberry Pi is a small, single-board computer popular made popular by it\'s low price and assortment of accessories and software libraries.Projects that others have completed include game emulators, weather stations, small robots, and much more! Below are an example of a project I created, and a quick guide to controlling motors using ROS on the Pi. 
+	</div>
+	<h3>SunsetPi</h3>
+	<div>
+		<img src="https://github.com/BrownCG/BrownCG.github.io/blob/sunset.gif" width=900>
+		This is a Wifi-connected timelapse camera that gathers sunrise or sunset times for your area via openweathermaps.org API calls, then sleeps until 20 minutes before sunset. It then takes a series of still images and stitches them into an .mp4 file, which is then emailed to the user. Finally, it cleans up all the files it has created and goes back to sleep waiting for the next day. Because of the hardware and various account setups this requires, I am not currently sharing the code for this project. (Note image quality was sacrificed to convert to a .gif file for this page.
+	</div>
+	<h3>RosPi Stepper Motors</h3>
+	<div>
+		ROS Noetic (20.04) is the 13th distribution of the Robot Operating System released in May 2020. I was unable to find a definitive guide on driving stepper motors on a Raspberry Pi using this popular automation framework, so this is my attempt at a step by step guide:
+	</div>
+    </body>
+</html>
+
