@@ -1,1 +1,38 @@
-Welcome to mini-Bookie!
+<html>
+    <head>
+        <title>Mini-Bookie</title>
+    </head>
+    <body>
+        <h1>Mini-Bookie Predictive Market</h1>
+        <table width="800" border="1" class="table">
+    	<tr>
+        	<td><a href='/cannonCup'>Cannon Cup</a></td>
+        	<td><a href='/miniBookie'>Mini-Bookie</a></td>
+        	<td><a href='/oregoneAirways'>Oregone Airways</a></td>
+		<td><a href='/piProjects'>Raspberry Pi Work</a></td>
+    	</tr>
+    </table>
+    <br>
+    <br>
+	<div>
+        Mini-Bookie is a functioning RESTful API-based sportsbook backend. After creating a profile at
+        <a ref="http://minibookie.wn.r.appspot.com">the landing page</a> using a Gmail account, users
+        can create an event themselves or place a bet on an existing event. When created, an event is 
+        given starting odds, a house cut or vig, and the maximum loss the house is willing to accept on
+        the ticket. When a bet is placed, the potential payout is compared to make sure the house cannot
+        lose more than its max loss; if accepted, the bet is created as an entry in a many-to-one 
+        relationship with an event and the odds are automatically adjusted for future bets. Once all bets 
+        are in, the game can be decided or cancelled. Cancelling the game through a DELETE call on the
+        event causes all bets to be refunded and archived. Declaring a winner of the game through a PUT
+        call causes all winning bets to be credited to those users with the bet status set to WIN, and 
+        the losing bets to be set to LOSS.
+    </div>
+    <br>
+    <br>
+    <div>
+        This project is hosted on Google Cloud Platform and is written in Flask, a web-development
+        Python library. The testing suite is run through the Postman API console.
+    </div>
+    </body>
+</html>
+
